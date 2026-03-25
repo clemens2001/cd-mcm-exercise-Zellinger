@@ -1,7 +1,7 @@
 # Exercise 1: Git Basics -- PRs, Interactive Rebase & Unit Tests
 
 **Course:** Continuous Delivery in Agile Software Development (Master)
-**Points:** 30
+**Points:** 24
 
 ## Learning Objectives
 
@@ -40,7 +40,7 @@ go build -o api-server ./cmd/api # Build the server binary
 
 ## Tasks
 
-### Task 1: Repository Setup (4 Points)
+### Task 1: Repository Setup (2 Points)
 
 1. Fork this repository into your own GitHub account. Name it `cd-mcm-exercise-[Nachname]`.
 2. Clone your fork locally.
@@ -52,7 +52,7 @@ go build -o api-server ./cmd/api # Build the server binary
 
 ---
 
-### Task 2: Unit Tests (8 Points)
+### Task 2: Unit Tests (6 Points)
 
 The store package (`internal/store/memory_test.go`) contains incomplete tests marked with `TODO` comments. Your task:
 
@@ -87,7 +87,7 @@ Requirements:
 
 ---
 
-### Task 4: Interactive Rebase (10 Points)
+### Task 4: Interactive Rebase (8 Points)
 
 A special branch `exercise/01-rebase-practice` contains a deliberately messy commit history. Your task is to clean it up using `git rebase -i`.
 
@@ -159,8 +159,8 @@ Use these prefixes for all commit messages:
 
 | Task | Points |
 |------|--------|
-| Repository Setup | 4 |
-| Unit Tests | 8 |
+| Repository Setup | 2 |
+| Unit Tests | 6 |
 | Feature Branch & PR | 8 |
-| Interactive Rebase | 10 |
-| **Total** | **30** |
+| Interactive Rebase | 8 |
+| **Total** | **24** |
