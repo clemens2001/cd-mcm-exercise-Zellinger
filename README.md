@@ -1,7 +1,7 @@
 # Exercise 3: CI Pipeline -- SonarCloud, Matrix Builds & Linting
 
 **Course:** Continuous Delivery in Agile Software Development (Master)
-**Points:** 30
+**Points:** 24
 
 ## Learning Objectives
 
@@ -28,7 +28,7 @@
 
 ## Tasks
 
-### Task 1: Matrix Builds (6 Points)
+### Task 1: Matrix Builds (4 Points)
 
 The CI workflow already has a matrix strategy with one Go version. Your tasks:
 
@@ -42,7 +42,7 @@ The CI workflow already has a matrix strategy with one Go version. Your tasks:
 
 ---
 
-### Task 2: Linting with golangci-lint (8 Points)
+### Task 2: Linting with golangci-lint (6 Points)
 
 1. **Add a `lint` job** to the CI workflow that:
    - Runs `golangci-lint` using the `golangci/golangci-lint-action@v4` action
@@ -61,7 +61,7 @@ The CI workflow already has a matrix strategy with one Go version. Your tasks:
 
 ---
 
-### Task 3: SonarCloud Integration (10 Points)
+### Task 3: SonarCloud Integration (8 Points)
 
 1. **Create a SonarCloud project:**
    - Go to [sonarcloud.io](https://sonarcloud.io) and sign in with GitHub.
@@ -133,8 +133,8 @@ The CI workflow already has a matrix strategy with one Go version. Your tasks:
 
 | Task | Points |
 |------|--------|
-| Matrix Builds | 6 |
-| Linting with golangci-lint | 8 |
-| SonarCloud Integration | 10 |
+| Matrix Builds | 4 |
+| Linting with golangci-lint | 6 |
+| SonarCloud Integration | 8 |
 | Code Coverage Improvement | 6 |
-| **Total** | **30** |
+| **Total** | **24** |
