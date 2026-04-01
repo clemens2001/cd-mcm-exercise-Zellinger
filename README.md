@@ -199,3 +199,7 @@ trivy fs .                            # Scan filesystem/dependencies
 | Kubernetes Deployment with Minikube | 8 |
 | Production Readiness | 6 |
 | **Total** | **24** |
+
+## Author
+- FH-Prof. Dr. Marc Kurz (marc.kurz@fh-hagenberg.at)
+
