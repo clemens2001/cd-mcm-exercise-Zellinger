@@ -32,7 +32,7 @@
 
 The CI workflow already has a matrix strategy with one Go version. Your tasks:
 
-1. **Extend the matrix** to include Go versions `1.21` and `1.22` (see the TODO in `ci.yml`).
+1. **Extend the matrix** to include Go versions `1.25` and `1.26` (see the TODO in `ci.yml`).
 2. **Verify** that the pipeline runs tests for both Go versions in parallel.
 3. **Add an OS matrix dimension** (`ubuntu-latest`, `macos-latest`) so tests run on both platforms.
 
@@ -84,7 +84,7 @@ The CI workflow already has a matrix strategy with one Go version. Your tasks:
        - name: Download coverage
          uses: actions/download-artifact@v4
          with:
-           name: coverage-1.22
+           name: coverage-1.26
        - name: SonarCloud Scan
          uses: SonarSource/sonarqube-scan-action@v5
          env:
