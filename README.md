@@ -1,16 +1,19 @@
-# Exercise 2: Microservice Architecture, Docker & GitHub Actions
+# Continuous Delivery in Agile Software Development -- Exercises
 
 [![CI](https://github.com/clemens2001/cd-mcm-exercise-Zellinger/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/clemens2001/cd-mcm-exercise-Zellinger/actions/workflows/ci.yml)
 
-**Course:** Continuous Delivery in Agile Software Development (Master)
-**Points:** 24
+This repository contains four progressive exercises for the Master course **Continuous Delivery in Agile Software Development**.
 
-## Learning Objectives
+## Overview
 
-- Understand microservice architecture with a REST API in Go
-- Containerize applications using Docker (multi-stage builds)
-- Orchestrate services with Docker Compose
-- Set up a basic CI pipeline with GitHub Actions
+| Exercise | Topic | Branch |
+|----------|-------|--------|
+| 1 | Git Basics: PRs, Interactive Rebase, Unit Tests | `exercise/01-git-basics` |
+| 2 | Microservice Architecture, Docker & GitHub Actions | `exercise/02-microservice-docker` |
+| 3 | CI Pipeline: SonarCloud, Matrix Builds, Linting | `exercise/03-ci-pipeline` |
+| 4 | Vulnerability Scanning & Kubernetes Deployment | `exercise/04-security-k8s` |
+
+## Technology Stack
 
 - **Language:** Go 1.24+
 - **Web Framework:** Gorilla Mux
