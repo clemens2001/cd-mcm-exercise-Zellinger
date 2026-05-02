@@ -1,5 +1,7 @@
 # Exercise 2: Microservice Architecture, Docker & GitHub Actions
 
+[![CI](https://github.com/clemens2001/cd-mcm-exercise-Zellinger/actions/workflows/ci.yml/badge.svg?branch=main)](https://github.com/clemens2001/cd-mcm-exercise-Zellinger/actions/workflows/ci.yml)
+
 **Course:** Continuous Delivery in Agile Software Development (Master)
 **Points:** 24
 
@@ -152,4 +154,3 @@ All tests must use `httptest.NewRecorder` (no actual HTTP server needed).
 
 ## Author
 - FH-Prof. Dr. Marc Kurz (marc.kurz@fh-hagenberg.at)
-
