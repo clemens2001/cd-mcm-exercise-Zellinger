@@ -30,6 +30,7 @@ jobs:
 
       - name: Check coverage threshold
         run: |
+          go test -coverprofile=coverage.out ./...
           coverage_report=$(go tool cover -func=coverage.out)
           echo "$coverage_report"
           total_coverage=$(echo "$coverage_report" | awk '/^total:/ { gsub("%", "", $3); print $3 }')
