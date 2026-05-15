@@ -1,6 +1,17 @@
 package handler
 
-/*
+import (
+	"encoding/json"
+	"net/http"
+	"net/http/httptest"
+	"strings"
+	"testing"
+
+	"github.com/gorilla/mux"
+	"github.com/mrckurz/CI-CD-MCM/internal/model"
+	"github.com/mrckurz/CI-CD-MCM/internal/store"
+)
+
 func setupRouter() (*mux.Router, *Handler) {
 	s := store.NewMemoryStore()
 	h := NewHandler(s)
@@ -166,4 +177,3 @@ func TestDeleteProductNotFound(t *testing.T) {
 		t.Fatalf("expected 404, got %d", rr.Code)
 	}
 }
-*/
