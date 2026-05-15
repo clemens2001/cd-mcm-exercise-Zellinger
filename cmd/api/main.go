@@ -17,6 +17,8 @@ func main() {
 		port = "8080"
 	}
 
+	testLinter := "This should fail the build"
+
 	r := mux.NewRouter()
 
 	// Use PostgreSQL if DB_HOST is set, otherwise fall back to in-memory store
