@@ -1,7 +1,6 @@
 package model
 
 // Product represents a product in the catalog.
-// Testing the linter: we expect to recieve an error for this typo.
 type Product struct {
 	ID    int     `json:"id"`
 	Name  string  `json:"name"`
