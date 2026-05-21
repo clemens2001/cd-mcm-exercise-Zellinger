@@ -10,9 +10,11 @@ COPY . .
 RUN CGO_ENABLED=0 GOOS=linux go build -o /api-server ./cmd/api
 
 # Runtime stage
-FROM alpine:3.19
+# Optimization: Switched from alpine:3.19 to scratch to remove OS vulnerabilities
+FROM scratch
 
-RUN apk --no-cache add ca-certificates
+# Copy the CA certificates from the builder stage so HTTPS calls work if needed
+COPY --from=builder /etc/ssl/certs/ca-certificates.crt /etc/ssl/certs/
 
 WORKDIR /app
 COPY --from=builder /api-server .
