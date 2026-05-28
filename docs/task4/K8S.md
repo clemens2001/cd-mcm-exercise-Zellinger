@@ -2,7 +2,7 @@
 
 ### 1. Scaling
 
-![1779963124962](scaling.png)
+![1779963502844](scaling.png)
 
 ### 2. Health Checks
 **Readiness vs Liveness probe: what's the difference?**
